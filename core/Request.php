@@ -5,7 +5,7 @@ namespace app\core;
 class Request
 {
 	//temporary base url
-	public string $base_url = 'www/mvc_framework/public/';
+	public string $base_url = 'www/blogging_platform/public/';
 	public function getPath()
 	{
 		$path = $_SERVER['REQUEST_URI'] ?? '/';

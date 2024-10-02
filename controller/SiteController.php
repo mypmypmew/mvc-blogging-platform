@@ -44,5 +44,10 @@ class SiteController extends Controller
 		return 'Handling submitted data';
 	}
 
+	public function createPost()
+	{
+		return $this->render('post');
+	}
+
 }
 

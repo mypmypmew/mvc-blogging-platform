@@ -43,20 +43,22 @@ use \app\core\Application;
 		</div>
 		<div id="navbar" class="collapse navbar-collapse">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="/www/mvc_framework/public/">Home</a></li>
-				<li><a href="/www/mvc_framework/public/about">About</a></li>
-				<li><a href="/www/mvc_framework/public/contact">Contact</a></li>
+				<li class="active"><a href="/www/blogging_platform/public/">Home</a></li>
+				<li><a href="/www/blogging_platform/public/about">About</a></li>
+				<li><a href="/www/blogging_platform/public/contact">Contact</a></li>
 			</ul>
 			<?php if (Application::isGuest()): ?>
 			<ul class="nav navbar-nav reg-butt">
-				<li><a href="/www/mvc_framework/public/login">Login</a></li>
-				<li><a href="/www/mvc_framework/public/register">Register</a></li>
+				<li><a href="/www/blogging_platform/public/login">Login</a></li>
+				<li><a href="/www/blogging_platform/public/register">Register</a></li>
 
 			</ul>
 			<?php else: ?>
 				<ul class="nav navbar-nav reg-butt">
-					<li><a href="/www/mvc_framework/public/profile">Profile</a></li>
-					<li><a href="/www/mvc_framework/public/logout">Welcome <?php echo Application::$app->user->getDisplayName()?>
+					<li><a href="/www/blogging_platform
+/public/profile">Profile</a></li>
+					<li><a href="/www/blogging_platform
+/public/logout">Welcome <?php echo Application::$app->user->getDisplayName()?>
 							(Logout)
 						</a></li>
 				</ul>
