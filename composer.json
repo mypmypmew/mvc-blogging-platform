@@ -1,0 +1,12 @@
+{
+    "name": "root/mvc_framework",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app\\core\\": "core",
+            "app\\controllers\\": "controller",
+            "app\\models\\": "models",
+            "app\\core\\middlewares\\": "middlewares"
+        }
+    }
+}

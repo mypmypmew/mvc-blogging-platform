@@ -1,0 +1,10 @@
+# Enable mod_rewrite, which allows the use of the RewriteEngine
+RewriteEngine On
+
+
+# Check if the requested file or directory exists
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# If the file or directory does not exist, rewrite the request to index.php
+RewriteRule ^(.*)$ index.php [QSA,L]
